@@ -1,2 +1,2 @@
 # Pokedex
-Um programa que ao inserir o nome ou o número de um pokemon, mostrará imagens e habilidades sobre ele.
+A program that by inserting a pokemon's name or a number , will show images and abilities about it.

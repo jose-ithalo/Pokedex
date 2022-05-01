@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons Query</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h4>Welcome to Virtual Pokedex !</h4>
+    </header>
+    <div class="container">
+        <h1>Pokemon</h1>
+        <h3>Search a Pokemon by its name or id number</h3>
+        <form>
+            <div class="searchField">
+                <label for="nome">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div class="searchField">
+                <label for="number">Number</label>
+                <input id="number" type="number">
+                <div class="popup hidden">
+                    <p class="popup__msg">UNKNOWN POKEMON</p>
+                    <p>Make sure that you typed the rigth name or a valid id </p>
+                </div>
+            </div>
+        </form>
+        <div class="inform hidden">
+            <div class="images">
+                <h2></h2>
+                <img class="front">
+                <img class="back">
+            </div>
+            <h4>Abilities: </h4>
+            <p class="abilities"></p>
+            <p class="abilities"></p>
+            <p class="abilities"></p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
