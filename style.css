@@ -17,6 +17,7 @@ header {
 
 .container {
     background-color: rgb(241, 241, 191);
+    /* background-color: rgb(189, 72, 72); */
     height: 100vh;
     font-size: 140%;
     display: flex;
