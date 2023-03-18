@@ -4,17 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: rgb(80, 80, 207);
-    color: beige;
-    height: 80px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .container {
     background-color: rgb(241, 241, 191);
     /* background-color: rgb(189, 72, 72); */
@@ -26,6 +15,20 @@ header {
     justify-content: center;
 }
 
+form {
+    display: flex;
+}
+
+header {
+    background-color: rgb(80, 80, 207);
+    color: beige;
+    height: 80px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 h1 {
     color: rgb(221, 190, 14);
@@ -42,8 +45,13 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form {
-    display: flex;
+.hidden {
+    display: none;
+}
+
+.inform {
+    text-align: center;
+    font-family: cursive;
 }
 
 .searchField {
@@ -97,13 +105,4 @@ input:focus {
     font-size: 20px;
     margin: 10px;
     letter-spacing: 1.5px;
-}
-
-.hidden {
-    display: none;
-}
-
-.inform {
-    text-align: center;
-    font-family: cursive;
 }
