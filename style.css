@@ -45,10 +45,6 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hidden {
-    display: none;
-}
-
 .inform {
     text-align: center;
     font-family: cursive;
@@ -97,6 +93,10 @@ input:focus {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
 
 .popup__msg {
