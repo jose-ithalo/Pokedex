@@ -50,20 +50,6 @@ h3 {
     font-family: cursive;
 }
 
-.searchField {
-    margin: 40px 15px 30px 15px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
-}
-
-label {
-    color: rgb(71, 20, 20);
-    font-family: fantasy, Arial, Helvetica, sans-serif;
-    margin-bottom: 5px;
-}
-
 input {
     all: unset;
     background-color: white;
@@ -77,6 +63,12 @@ input {
 
 input:focus {
     box-shadow: 1px 1px 5px 1px rgb(25, 78, 102);
+}
+
+label {
+    color: rgb(71, 20, 20);
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
 }
 
 .popup {
@@ -105,4 +97,12 @@ input:focus {
     font-size: 20px;
     margin: 10px;
     letter-spacing: 1.5px;
+}
+
+.searchField {
+    margin: 40px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
 }
