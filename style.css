@@ -5,8 +5,7 @@
 }
 
 .container {
-    background-color: rgb(241, 241, 191);
-    /* background-color: rgb(189, 72, 72); */
+    background: linear-gradient(to bottom, #6ab7f5, #fff 120%);
     height: 100vh;
     font-size: 140%;
     display: flex;
@@ -20,7 +19,7 @@ form {
 }
 
 header {
-    background-color: rgb(80, 80, 207);
+    background-color: rgb(189, 72, 72);
     color: beige;
     height: 80px;
     font-size: 20px;
@@ -69,6 +68,10 @@ label {
     color: rgb(71, 20, 20);
     font-family: fantasy, Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
+}
+
+.pokedex {
+    width: 350px;
 }
 
 .popup {
