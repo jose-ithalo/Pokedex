@@ -6,7 +6,7 @@
 
 .container {
     background: linear-gradient(to bottom, #6ab7f5, #fff 120%);
-    height: 100vh;
+    min-height: 100vh;
     font-size: 140%;
     display: flex;
     align-items: center;
@@ -42,6 +42,10 @@ h1 {
 h3 {
     color: rgba(5, 5, 116, 0.664);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
 }
 
 .inform {
@@ -88,10 +92,6 @@ label {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.hidden {
-    display: none;
 }
 
 .popup__msg {
