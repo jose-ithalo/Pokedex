@@ -22,34 +22,39 @@
 
         <!-- <h1>Pokemon</h1>
         <h3>Search a Pokemon by its name or id number</h3> -->
-        <form>
-            <div class="searchField">
-                <label for="nome">Name</label>
-                <input id="name" type="text">
-            </div>
-            <div class="searchField">
-                <label for="number">Number</label>
-                <input id="number" type="number">
-                <div class="popup hidden">
-                    <p class="popup__msg">UNKNOWN POKEMON</p>
-                    <p>Make sure that you typed the rigth name or a valid id </p>
-                </div>
-            </div>
-        </form>
-        <div class="inform hidden">
-            <div class="images">
-                <h2></h2>
-                <img class="front">
-                <img class="back">
-            </div>
-            <h4>Abilities: </h4>
-            <p class="abilities"></p>
-            <p class="abilities"></p>
-            <p class="abilities"></p>
 
+        <div class="pokedexArea">
+            <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+
+            <div class="inform hidden">
+                <div class="PokemonImages">
+                    <img class="front">
+                    <img class="back">
+                </div>
+                <h2></h2>
+                <!-- <h4>Abilities: </h4>
+                <p class="abilities"></p>
+                <p class="abilities"></p>
+                <p class="abilities"></p> -->
+
+            </div>
+
+            <form>
+                <div class="searchField">
+                    <label for="nome">Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="searchField">
+                    <label for="number">Number</label>
+                    <input id="number" type="number">
+                    <div class="popup hidden">
+                        <p class="popup__msg">UNKNOWN POKEMON</p>
+                        <p>Make sure that you typed the rigth name or a valid id </p>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
     </div>
 
     <script src="script.js"></script>
