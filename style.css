@@ -16,6 +16,10 @@
 
 form {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
 }
 
 header {
@@ -55,27 +59,44 @@ h3 {
 
 input {
     all: unset;
-    background-color: white;
-    border: 1px solid black;
+    background-color: #fff;
+    border: 5px ridge rgb(153, 149, 149);
+    border-radius: 5px;
+    border-bottom-right-radius: 15px;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: cursive, 'Courier New';
     font-size: 16px;
+    font-weight: 600;
     width: 185px;
     padding: 6px;
 }
 
 input:focus {
-    box-shadow: 1px 1px 5px 1px rgb(25, 78, 102);
+    box-shadow: 1px 1px 5px 1px rgb(41, 36, 36);
 }
 
 label {
-    color: rgb(71, 20, 20);
-    font-family: fantasy, Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 0.616);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
 .pokedex {
     width: 350px;
+}
+
+.pokedexArea {
+    position: relative;
+    height: 525px;
+}
+
+.PokemonImages {
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    right: 15%;
 }
 
 .popup {
@@ -85,13 +106,11 @@ label {
     border: 1px solid rgb(71, 20, 20);
     border-radius: 10px;
     font-size: 18px;
+    padding: 10px;
     position: absolute;
     top: 100px;
     right: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
 
 .popup__msg {
@@ -103,7 +122,7 @@ label {
 }
 
 .searchField {
-    margin: 40px 15px 30px 15px;
+    margin: 6px 0px;
     display: flex;
     flex-direction: column;
     position: relative;
