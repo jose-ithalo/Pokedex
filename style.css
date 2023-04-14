@@ -59,7 +59,7 @@ h3 {
 
 input {
     all: unset;
-    background-color: #fff;
+    background-color: rgb(233, 233, 233);
     border: 5px ridge rgb(153, 149, 149);
     border-radius: 5px;
     border-bottom-right-radius: 15px;
@@ -76,7 +76,7 @@ input:focus {
 }
 
 label {
-    color: rgba(255, 255, 0, 0.616);
+    color: rgb(179, 179, 15);
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: 700;
@@ -92,11 +92,11 @@ label {
     height: 525px;
 }
 
-.PokemonImages {
+.pokemonImages {
     position: absolute;
     top: 33%;
-    left: 10%;
-    right: 15%;
+    left: 18%;
+    right: 12%;
 }
 
 .popup {
