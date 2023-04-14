@@ -6,76 +6,49 @@ const pokePhoto2 = document.querySelector('.back');
 const abilities = document.querySelectorAll('.abilities');
 const popup = document.querySelector('.popup');
 const informations = document.querySelector('.inform');
+const pokemonImages = document.querySelector('.pokemonImages');
 
 
-inputName.addEventListener('change', function () {
+const inputList = [inputName, inputNumber];
 
-    const url = 'https://pokeapi.co/api/v2/pokemon/'
+inputList.forEach(function (input) {
 
-    const promiseResposta = fetch(url + inputName.value.toLowerCase());
-    promiseResposta.then(function (resposta) {
+    input.addEventListener('change', function () {
 
-        if (!resposta.ok) {
-            popup.classList.remove('hidden');
-            informations.classList.add('hidden');
-            return;
-        } else {
-            informations.classList.remove('hidden');
-            popup.classList.add('hidden');
-        }
+        const url = 'https://pokeapi.co/api/v2/pokemon/'
 
-        const promiseBody = resposta.json();
+        const promiseResposta = fetch(url + input.value.toLowerCase());
+        promiseResposta.then(function (resposta) {
 
-        promiseBody.then(function (body) {
-            console.log(body);
-            titleName.textContent = body.name;
-            pokePhoto.src = body.sprites.front_default;
-            pokePhoto2.src = body.sprites.back_default;
-            inputNumber.value = body.id;
-            abilities.forEach(function (abil) {
-                abil.textContent = '';
-            });
-            const lengthAbility = body.abilities.length;
-            for (let pos = 0; pos < lengthAbility; pos++) {
-                abilities[pos].textContent = body.abilities[pos].ability.name;
-            }
-        });
-    });
-
-});
-
-inputNumber.addEventListener('change', function () {
-    const url = 'https://pokeapi.co/api/v2/pokemon/'
-
-    const promiseResposta = fetch(url + inputNumber.value);
-    promiseResposta.then(function (resposta) {
-
-        if (!resposta.ok) {
-            popup.classList.remove('hidden');
-            informations.classList.add('hidden');
-            return;
-        } else {
-            informations.classList.remove('hidden');
-            popup.classList.add('hidden');
-        }
-
-        const promiseBody = resposta.json();
-
-        promiseBody.then(function (body) {
-            console.log(body);
-            titleName.textContent = body.name;
-            pokePhoto.src = body.sprites.front_default;
-            pokePhoto2.src = body.sprites.back_default;
-            inputName.value = body.name;
-            abilities.forEach(function (abil) {
-                abil.textContent = '';
-            });
-            const lengthAbility = body.abilities.length;
-            for (let pos = 0; pos < lengthAbility; pos++) {
-                abilities[pos].textContent = body.abilities[pos].ability.name;
+            if (!resposta.ok) {
+                popup.classList.remove('hidden');
+                informations.classList.add('hidden');
+                pokemonImages.classList.add('hidden');
+                return;
+            } else {
+                informations.classList.remove('hidden');
+                pokemonImages.classList.remove('hidden');
+                popup.classList.add('hidden');
             }
 
-        });
-    });
+            const promiseBody = resposta.json();
 
+            promiseBody.then(function (body) {
+                console.log(body);
+                titleName.textContent = body.name;
+                pokePhoto.src = body.sprites.front_default;
+                pokePhoto2.src = body.sprites.back_default;
+                inputName.value = body.name;
+                inputNumber.value = body.id;
+                abilities.forEach(function (abil) {
+                    abil.textContent = '';
+                });
+                const lengthAbility = body.abilities.length;
+                for (let pos = 0; pos < lengthAbility; pos++) {
+                    abilities[pos].textContent = body.abilities[pos].ability.name;
+                }
+            });
+        });
+
+    });
 });
