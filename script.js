@@ -5,7 +5,7 @@ const pokePhoto = document.querySelector('.front');
 const pokePhoto2 = document.querySelector('.back');
 const abilities = document.querySelectorAll('.abilities');
 const popup = document.querySelector('.popup');
-const informations = document.querySelector('.inform');
+const informations = document.querySelector('.informBallon');
 const pokemonImages = document.querySelector('.pokemonImages');
 
 
