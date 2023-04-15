@@ -10,7 +10,6 @@
     font-size: 140%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .detail::after {
@@ -110,8 +109,8 @@ input {
     all: unset;
     background-color: rgb(233, 233, 233);
     border: 5px ridge rgb(153, 149, 149);
-    border-radius: 5px;
     border-bottom-right-radius: 15px;
+    border-radius: 5px;
     box-sizing: border-box;
     font-family: cursive, 'Courier New';
     font-size: 16px;
@@ -139,6 +138,7 @@ label {
 .pokedexArea {
     position: relative;
     height: 525px;
+    margin-left: 20%;
 }
 
 .pokemonImages {
