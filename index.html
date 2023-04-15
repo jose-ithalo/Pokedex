@@ -39,16 +39,12 @@
                 <div class="searchField">
                     <label for="number">Number</label>
                     <input id="number" type="number">
-                    <div class="popup hidden">
-                        <p class="popup__msg">UNKNOWN POKEMON</p>
-                        <p>Make sure that you typed the rigth name or a valid id </p>
-                    </div>
                 </div>
             </form>
 
         </div>
 
-        <div class="informBallon hidden">
+        <div class="informBallon detail hidden">
             <h2></h2>
             <div>
                 <h4>Abilities: </h4>
@@ -56,6 +52,11 @@
                 <p class="abilities"></p>
                 <p class="abilities"></p>
             </div>
+        </div>
+
+        <div class="errorBallon detail hidden">
+            <p class="errorBallon__msg">UNKNOWN POKEMON</p>
+            <span>Make sure that you typed the<br>rigth name or a valid number </span>
         </div>
 
     </div>
