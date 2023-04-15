@@ -4,7 +4,7 @@ const titleName = document.querySelector('h2');
 const pokePhoto = document.querySelector('.front');
 const pokePhoto2 = document.querySelector('.back');
 const abilities = document.querySelectorAll('.abilities');
-const popup = document.querySelector('.popup');
+const errorBallon = document.querySelector('.errorBallon');
 const informations = document.querySelector('.informBallon');
 const pokemonImages = document.querySelector('.pokemonImages');
 
@@ -21,14 +21,14 @@ inputList.forEach(function (input) {
         promiseResposta.then(function (resposta) {
 
             if (!resposta.ok) {
-                popup.classList.remove('hidden');
+                errorBallon.classList.remove('hidden');
                 informations.classList.add('hidden');
                 pokemonImages.classList.add('hidden');
                 return;
             } else {
                 informations.classList.remove('hidden');
                 pokemonImages.classList.remove('hidden');
-                popup.classList.add('hidden');
+                errorBallon.classList.add('hidden');
             }
 
             const promiseBody = resposta.json();
