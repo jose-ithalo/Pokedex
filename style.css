@@ -145,11 +145,11 @@ main {
     margin-left: 20%;
 }
 
-.pokemonImages {
+.pokemonImages img {
     position: absolute;
-    top: 33%;
-    left: 18%;
-    right: 12%;
+    top: 40%;
+    left: 40%;
+    transform: translate(-20%, -50%);
 }
 
 .searchField {
