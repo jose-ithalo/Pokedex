@@ -82,6 +82,7 @@ h1 {
 h2 {
     letter-spacing: 2px;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 h3 {
@@ -109,8 +110,8 @@ input {
     all: unset;
     background-color: rgb(233, 233, 233);
     border: 5px ridge rgb(153, 149, 149);
-    border-bottom-right-radius: 15px;
     border-radius: 5px;
+    border-bottom-right-radius: 15px;
     box-sizing: border-box;
     font-family: cursive, 'Courier New';
     font-size: 16px;
