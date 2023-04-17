@@ -133,6 +133,7 @@ label {
 main {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .pokedex {
@@ -157,4 +158,23 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.reverseButton {
+    background-color: #3a3636;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: -2px 3px 0 #222, -2px 5px 0 #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+    position: absolute;
+    bottom: 30%;
+    right: -35%;
+}
+
+.reverseButton:active {
+    box-shadow: inset -4px 4px 0 #1b1a1a;
+    font-size: 14px;
 }

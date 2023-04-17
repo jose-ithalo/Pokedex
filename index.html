@@ -9,6 +9,7 @@
     <link rel="icon" href="./images/pokeball.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
 
                 <div class="pokemonImages">
                     <img class="front">
-                    <img class="back">
+                    <img class="back hidden">
                 </div>
 
                 <form>
@@ -33,6 +34,9 @@
                         <label for="name">Name</label>
                         <input id="name" type="text" autocomplete="off">
                     </div>
+                    <button type="button" class="reverseButton">
+                        <i class="fa-solid fa-repeat"></i>
+                    </button>
                     <div class="searchField">
                         <label for="number">Number</label>
                         <input id="number" type="number">
