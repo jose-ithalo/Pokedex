@@ -36,8 +36,8 @@ inputList.forEach(function (input) {
             promiseBody.then(function (body) {
                 console.log(body);
                 titleName.textContent = body.name;
-                pokePhoto.src = body.sprites.front_default;
-                pokePhoto2.src = body.sprites.back_default;
+                pokePhoto.src = body['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+                pokePhoto2.src = body['sprites']['versions']['generation-v']['black-white']['animated']['back_default'];
                 inputName.value = body.name;
                 inputNumber.value = body.id;
                 abilities.forEach(function (abil) {
