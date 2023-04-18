@@ -7,7 +7,7 @@ const abilities = document.querySelectorAll('.abilities');
 const errorBallon = document.querySelector('.errorBallon');
 const informations = document.querySelector('.informBallon');
 const pokemonImages = document.querySelector('.pokemonImages');
-
+const reverseButton = document.querySelector('.reverseButton');
 
 const inputList = [inputName, inputNumber];
 
@@ -51,4 +51,10 @@ inputList.forEach(function (input) {
         });
 
     });
+});
+
+reverseButton.addEventListener('click', function () {
+
+    pokePhoto.classList.toggle('hidden');
+    pokePhoto2.classList.toggle('hidden');
 });
