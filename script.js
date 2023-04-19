@@ -1,6 +1,7 @@
 const inputName = document.querySelector('#name');
 const inputNumber = document.querySelector('#number');
 const titleName = document.querySelector('h2');
+const valueType = document.querySelector('.valueType');
 const pokePhoto = document.querySelector('.front');
 const pokePhoto2 = document.querySelector('.back');
 const abilities = document.querySelectorAll('.abilities');
@@ -36,6 +37,7 @@ inputList.forEach(function (input) {
             promiseBody.then(function (body) {
                 console.log(body);
                 titleName.textContent = body.name;
+                valueType.textContent = body.types[0].type.name;
                 pokePhoto.src = body['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
                 pokePhoto2.src = body['sprites']['versions']['generation-v']['black-white']['animated']['back_default'];
                 inputName.value = body.name;
