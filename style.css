@@ -9,6 +9,11 @@
     min-height: 100vh;
 }
 
+.abilities,
+.valueType {
+    text-transform: capitalize;
+}
+
 .detail::after {
     background-color: #fff;
     border: 1px solid;
@@ -177,4 +182,9 @@ main {
 .reverseButton:active {
     box-shadow: inset -4px 4px 0 #1b1a1a;
     font-size: 14px;
+}
+
+.titleType {
+    display: inline-block;
+    margin-bottom: 8px;
 }
