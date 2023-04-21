@@ -79,7 +79,6 @@
 form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 23%;
 }
 
 header {
@@ -118,6 +117,25 @@ h3 {
     display: none;
 }
 
+.idBox {
+    background-color: rgb(233, 233, 233);
+    border: 5px ridge rgb(153, 149, 149);
+    border-radius: 5px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4% 0;
+    padding: 1%;
+    min-height: 43px;
+    width: 52%;
+}
+
+.idPokemon {
+    font-family: sans-serif, Courier, monospace;
+    margin: 2% 0px 0px 2%;
+}
+
 .informBallon {
     background-color: #fff;
     border: 1px solid black;
@@ -140,6 +158,7 @@ input {
     font-family: cursive, 'Courier New';
     font-size: 16px;
     font-weight: 600;
+    text-transform: capitalize;
     width: 80%;
     padding: 1.5%;
 }
@@ -200,7 +219,7 @@ main {
     padding: 12px;
     position: absolute;
     bottom: 28%;
-    right: 48%;
+    right: 18%;
 }
 
 .reverseButton:active {
