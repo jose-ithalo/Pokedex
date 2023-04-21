@@ -8,6 +8,7 @@ const abilities = document.querySelectorAll('.abilities');
 const errorBallon = document.querySelector('.errorBallon');
 const informations = document.querySelector('.informBallon');
 const pokemonImages = document.querySelector('.pokemonImages');
+const idPokemon = document.querySelector('.idPokemon');
 const reverseButton = document.querySelector('.reverseButton');
 const buttonPrev = document.querySelector('.btnPrev');
 const buttonNext = document.querySelector('.btnNext');
@@ -38,6 +39,7 @@ function renderPokemon(response) {
         pokePhoto2.src = body['sprites']['versions']['generation-v']['black-white']['animated']['back_default'];
         inputValue.value = body.name;
         pokeNumber = body.id;
+        idPokemon.textContent = pokeNumber;
         // inputNumber.value = body.id;
         abilities.forEach(function (abil) {
             abil.textContent = '';
