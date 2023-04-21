@@ -22,9 +22,19 @@
 
 .btnField button {
     background-color: #3a3636;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 #202020, -3px 5px 0 #000;
     color: #fff;
     cursor: pointer;
-    padding: 6px;
+    font-size: 16px;
+    padding: 3%;
+    width: 40%;
+}
+
+.btnField button:active {
+    box-shadow: inset -4px 4px 2px #222;
+    font-size: 14px;
 }
 
 .detail::after {
@@ -177,12 +187,6 @@ main {
     transform: translate(-20%, -50%);
 }
 
-/* .searchField {
-    margin: 6px 0px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-} */
 
 .reverseButton {
     background-color: #3a3636;
@@ -195,7 +199,7 @@ main {
     padding: 12px;
     position: absolute;
     bottom: 28%;
-    right: 50%;
+    right: 48%;
 }
 
 .reverseButton:active {
