@@ -63,7 +63,6 @@ pokeForm.addEventListener('submit', function (evt) {
 buttonPrev.addEventListener('click', function () {
 
     if (pokeNumber <= 1) {
-        pokeNumber = 0;
         return
     }
 
