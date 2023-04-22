@@ -22,6 +22,9 @@ function renderPokemon(response) {
         errorBallon.classList.remove('hidden');
         informations.classList.add('hidden');
         pokemonImages.classList.add('hidden');
+        idPokemon.textContent = 0;
+        pokePhoto.src = '';
+        pokePhoto2.src = '';
         return;
     } else {
         informations.classList.remove('hidden');
@@ -40,7 +43,6 @@ function renderPokemon(response) {
         inputValue.value = body.name;
         pokeNumber = body.id;
         idPokemon.textContent = pokeNumber;
-        // inputNumber.value = body.id;
         abilities.forEach(function (abil) {
             abil.textContent = '';
         });
@@ -54,6 +56,11 @@ function renderPokemon(response) {
 pokeForm.addEventListener('submit', function (evt) {
 
     evt.preventDefault();
+
+    if (inputValue.value === '') {
+        idPokemon.textContent = 0;
+        return
+    }
 
     const promiseResponse = fetch(url + inputValue.value.toLowerCase());
     promiseResponse.then(function (response) {
