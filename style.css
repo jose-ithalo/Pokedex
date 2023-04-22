@@ -82,35 +82,22 @@ form {
 }
 
 header {
-    background-color: rgb(189, 72, 72);
-    color: beige;
-    height: 80px;
-    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80px;
     margin-bottom: 50px;
 }
 
-h1 {
-    color: rgb(221, 190, 14);
-    font-family: 'Anton', sans-serif;
-    font-size: 40px;
-    letter-spacing: 3px;
-    font-style: italic;
-    margin-bottom: 30px;
-    margin-top: -80px;
+header img {
+    margin-top: 10px;
+    width: 30%;
 }
 
 h2 {
     letter-spacing: 2px;
     margin-bottom: 10px;
     text-transform: capitalize;
-}
-
-h3 {
-    color: rgba(5, 5, 116, 0.664);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hidden {
@@ -189,7 +176,7 @@ main {
 .pokedexArea {
     position: relative;
     max-height: 525px;
-    margin-left: 20%;
+    margin-left: 17%;
     max-width: 360px;
 }
 
@@ -206,7 +193,6 @@ main {
     left: 40%;
     transform: translate(-20%, -50%);
 }
-
 
 .reverseButton {
     background-color: #3a3636;
