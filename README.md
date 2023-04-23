@@ -1,6 +1,6 @@
 # Pokedex
 
-> This program is a virtual pokedex created for a easy search that by inserting a pokemon's name or a number , will show images and abilities about it.   
+> This program is a virtual pokedex created for easy searches and to have fun, that by inserting a pokemon's name or a number , will show images and abilities about it.   
 It isn't responsive, developed for desktops and tablets computers, so it's suitable for larger screens. 
 
 ## Tecnologies used:
