@@ -21,3 +21,7 @@ It isn't responsive, developed for desktops and tablets computers, so it's suita
 ## API used:
 
 + https://pokeapi.co/
+
+## Link to access
+
++ https://joseph-pokedex.netlify.app/
