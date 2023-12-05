@@ -35,7 +35,6 @@ function renderPokemon(response) {
     const promiseBody = response.json();
 
     promiseBody.then(function (body) {
-        console.log(body);
         titleName.textContent = body.name;
         valueType.textContent = body.types[0].type.name;
         pokePhoto.src = body['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
